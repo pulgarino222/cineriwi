@@ -1,6 +1,9 @@
 /* root: asi se crea una variables */
 /* para el examen todos los colores deben estar en variables y llamados
 se debe usar cuando el color se repite mas de dos veces */
+/* el import siempre va arriva es la importacion de fuente*/
+@import url('https://fonts.googleapis.com/css2?family=Offside&family=Zen+Old+Mincho&display=swap');
+
 :root{
     --azul-oscuro:#181f48;
     --blanco:#ffff;
@@ -10,14 +13,25 @@ se debe usar cuando el color se repite mas de dos veces */
     --moradomain:#AB3DC5;
 
 }
+/* este es un selector universal */
 
-
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Offside", sans-serif;
+}
 
 .header{
     display:flex;
     align-items: center;
     justify-content: space-between;
     background-color: var(--rojomain);
-    color: var(--azul-oscuro)
+    color: var(--azul-oscuro);
+    /* padding:5px 10px ; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+
 }
 
