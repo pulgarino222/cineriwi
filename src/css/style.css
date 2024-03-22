@@ -1,0 +1,23 @@
+/* root: asi se crea una variables */
+/* para el examen todos los colores deben estar en variables y llamados
+se debe usar cuando el color se repite mas de dos veces */
+:root{
+    --azul-oscuro:#181f48;
+    --blanco:#ffff;
+    --rojomain:#F33014;
+    --negrogris:#2D2D2D;
+    --azulcielo:#4DC3A8;
+    --moradomain:#AB3DC5;
+
+}
+
+
+
+.header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--rojomain);
+    color: var(--azul-oscuro)
+}
+
