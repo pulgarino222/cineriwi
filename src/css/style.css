@@ -2,8 +2,9 @@
 /* para el examen todos los colores deben estar en variables y llamados
 se debe usar cuando el color se repite mas de dos veces */
 /* el import siempre va arriva es la importacion de fuente*/
+/* si vamos a descargar imagenes debe ser con webp */
 @import url('https://fonts.googleapis.com/css2?family=Offside&family=Zen+Old+Mincho&display=swap');
-
+/* @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"); de esta forma se trabaja mejor con los iconos y en la parte de el link se pega la clase*/
 :root{
     --azul-oscuro:#181f48;
     --blanco:#ffff;
@@ -11,6 +12,7 @@ se debe usar cuando el color se repite mas de dos veces */
     --negrogris:#2D2D2D;
     --azulcielo:#4DC3A8;
     --moradomain:#AB3DC5;
+    --yellow:#BCBF63;
 
 }
 /* este es un selector universal */
@@ -32,6 +34,58 @@ se debe usar cuando el color se repite mas de dos veces */
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 10px;
+}
+
+.seccionestrenos{
+    
+    padding-left: 50px;
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
+.caption{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+/* text-decoration:none ; para quitar los rayas de los link o los puntos de las listas */
+/* el a se le puso para los ancor */
+.nav a{
+    color: var(--blanco);
+    text-decoration:none ;
+}
+
+main{
+    background-image: linear-gradient(to bottom right, var(--negrogris), var(--yellow));
+}
+
+.figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.seccionestrenos{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer{
+    display:flex;
+    justify-content: center;
+    background-color: var(--moradomain);
+}
+
 
