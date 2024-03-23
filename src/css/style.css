@@ -6,13 +6,13 @@ se debe usar cuando el color se repite mas de dos veces */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 /* @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"); de esta forma se trabaja mejor con los iconos y en la parte de el link se pega la clase*/
 :root{
-    --azul-oscuro:#181f48;
-    --blanco:#ffff;
-    --rojomain:#F33014;
-    --negrogris:#2D2D2D;
-    --azulcielo:#4DC3A8;
-    --moradomain:#AB3DC5;
-    --yellow:#BCBF63;
+   --verdebarr:#47855b;
+   --sombraverd:#46614e;
+   --verdedeg-2:#82c294;
+   --verdedeg--2:#bcf4cb;
+   --verdedeg---2:#e9fced;
+   --negro:#000000;
+   --azulselec:#b0f2e4;
 
 }
 /* este es un selector universal */
@@ -29,8 +29,8 @@ se debe usar cuando el color se repite mas de dos veces */
     display:flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--rojomain);
-    color: var(--azulcielo);
+    background-color: var(--verdebarr);
+    color: var(--negro);
     /* padding:5px 10px ; */
     padding-top: 5px;
     padding-bottom: 5px;
@@ -58,21 +58,25 @@ se debe usar cuando el color se repite mas de dos veces */
 /* text-decoration:none ; para quitar los rayas de los link o los puntos de las listas */
 /* el a se le puso para los ancor */
 .nav a{
-    color: var(--blanco);
+    color: var(--negro);
     text-decoration:none;
 }
 
-main{
-    background-image: linear-gradient( var(--negrogris), var(--yellow));
+body{
+    background-image: linear-gradient( var(--sombraverd), var(--verdedeg---2));
 }
+
 
 
 
 .titulo{
+
     display: flex;
     justify-content:center;
     align-items: center;
-    color: var(--azulcielo);
+    color: var(--negro);
+    background-color: var(--verdedeg--2);
+
 
     
 }
@@ -88,16 +92,16 @@ main{
     height:400px;
     margin: 10px;
     padding:30px ;
-    border-style: dashed;
+    border-style:solid;
     border-radius: 20%;
     
 }
 
 .imagen:hover{
-    background-color:var(--rojomain);
+    background-color:var(--verdedeg-2);
 }
 .button{
-    background-color:var(--moradomain);
+    background-color:var(--verdedeg--2);
     border-radius: 5%;
 }
 
@@ -106,8 +110,8 @@ main{
     position: absolute; 
     top: 50%;
     left: 50%;  
-    background-color: var(--yellow); 
-    color: var(--azul-oscuro); 
+    background-color: var(--verdedeg---2); 
+    color: var(--negro); 
     padding: 10px;
     border-radius: 5px; 
 }
@@ -129,8 +133,33 @@ main{
 }
 
 
+.fomr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+}
 
+.p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--negro);
+    background-color: var(--verdedeg--2);
+}
+
+.footer{
+    margin: 20px;
+    padding: 15px;
+    background-color: var(--sombraverd);
+}
+
+.fildset{
+    margin:5px;
+    padding:10px;
+    background-color: var(--verdedeg--2);
+    
+}
 
 
 
