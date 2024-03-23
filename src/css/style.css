@@ -3,7 +3,7 @@
 se debe usar cuando el color se repite mas de dos veces */
 /* el import siempre va arriva es la importacion de fuente*/
 /* si vamos a descargar imagenes debe ser con webp */
-@import url('https://fonts.googleapis.com/css2?family=Offside&family=Zen+Old+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 /* @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"); de esta forma se trabaja mejor con los iconos y en la parte de el link se pega la clase*/
 :root{
     --azul-oscuro:#181f48;
@@ -21,7 +21,8 @@ se debe usar cuando el color se repite mas de dos veces */
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: "Offside", sans-serif;
+    font-family: "Source Sans 3", sans-serif;
+    
 }
 
 .header{
@@ -29,27 +30,23 @@ se debe usar cuando el color se repite mas de dos veces */
     align-items: center;
     justify-content: space-between;
     background-color: var(--rojomain);
-    color: var(--azul-oscuro);
+    color: var(--azulcielo);
     /* padding:5px 10px ; */
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 10px;
 }
-
+/* 
 .seccionestrenos{
-    
-    padding-left: 50px;
-    padding-top: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display:table-column
+ 
 
 }
 .caption{
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
 
 .nav{
@@ -57,35 +54,84 @@ se debe usar cuando el color se repite mas de dos veces */
     align-items: center;
     justify-content:space-between;
 }
+
 /* text-decoration:none ; para quitar los rayas de los link o los puntos de las listas */
 /* el a se le puso para los ancor */
 .nav a{
     color: var(--blanco);
-    text-decoration:none ;
+    text-decoration:none;
 }
 
 main{
-    background-image: linear-gradient(to bottom right, var(--negrogris), var(--yellow));
+    background-image: linear-gradient( var(--negrogris), var(--yellow));
 }
 
+
+
+.titulo{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: var(--azulcielo);
+
+    
+}
+
+.seccion1{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+     
+}
+
+.imagen{
+    height:400px;
+    margin: 10px;
+    padding:30px ;
+    border-style: dashed;
+    border-radius: 20%;
+    
+}
+
+.imagen:hover{
+    background-color:var(--rojomain);
+}
+.button{
+    background-color:var(--moradomain);
+    border-radius: 5%;
+}
+
+.span{
+    display: none; 
+    position: absolute; 
+    top: 50%;
+    left: 50%;  
+    background-color: var(--yellow); 
+    color: var(--azul-oscuro); 
+    padding: 10px;
+    border-radius: 5px; 
+}
 .figure{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
+}
+
+
+.button:hover + .span{
+    display: block;
     
 }
 
-.seccionestrenos{
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.footer{
+.ul{
     display:flex;
     justify-content: center;
-    background-color: var(--moradomain);
+
 }
+
+
+
+
+
+
 
 
