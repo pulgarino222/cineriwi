@@ -76,6 +76,8 @@ body{
     align-items: center;
     color: var(--negro);
     background-color: var(--verdedeg--2);
+    margin: 5px;
+    border-radius:10% ;
 
 
     
